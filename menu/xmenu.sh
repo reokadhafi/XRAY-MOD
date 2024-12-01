@@ -19,7 +19,7 @@ fi
 echo -e "IP-VPS          :  $IPVPS"
 echo -e "ISP-VPS         :  $ISPVPS"
 echo "╔════════════════════════════════════════════════════╗"
-echo -e " \E[0;41;36m             🔹 Script By Yon-Mod 🔹                \E[0m"
+echo -e " \E[0;41;36m               🔹 Script By Yon-Mod 🔹              \E[0m"
 echo "╚════════════════════════════════════════════════════╝"
 echo "╔════════════════════════════════════════════════════╗"
 echo -e " \E[0;44;33m Link Script➤https://github.com/reokadhafi/XRAY-MOD   \E[0m"
