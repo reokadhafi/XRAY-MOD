@@ -415,7 +415,7 @@ echo -e "=> WS TLS : /xrayvws" | tee -a /etc/log-create-user.log
 echo -e "=> GRPC   : vmess-grpc" | tee -a /etc/log-create-user.log
 echo -e "=> OPOK   : ws://bugcom/xrayvws" | tee -a /etc/log-create-user.log
 echo -e "====== Vmess WS =======" | tee -a /etc/log-create-user.log
-echo -e "vmess://$VMESS_B64" | tee -a /etc/log-create-user.log
+echo -e "vmess://$VMESSWS_B64" | tee -a /etc/log-create-user.log
 echo -e "====== Vmess GRPC =======" | tee -a /etc/log-create-user.log
 echo -e "vmess://$VMESSGRPC_B64" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
