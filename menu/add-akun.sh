@@ -82,7 +82,7 @@ VMESSWS_JSON=$(jq -n \
       "add": $server,
       "port": 80,
       "id": $uuid,
-      "aid": 64,
+      "aid": 0,
       "net": "ws",
       "type": "none",
       "host": $server,
@@ -102,12 +102,12 @@ VMESSGRPC_JSON=$(jq -n \
       "add": $server,
       "port": 443,
       "id": $uuid,
-      "aid": 64,
+      "aid": 0,
       "net": "grpc",
       "type": "none",
       "host": "",
       "path": "vmess-grpc", # Ganti dengan nama service gRPC Anda
-      "tls": "true",
+      "tls": "tls",
       "expiry": $expiry
     }')
 
