@@ -102,14 +102,14 @@ apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 - contoh nama domain punya aku,silahkan ganti dengan punya kamu
 ```
 cat >/root/domain <<EOF
-biznet.reonolimits.my.id
+subdomain.reonolimits.my.id
 EOF
 ```
-- ganti biznet.reonolimits.my.id menjadi nama domain punya kamu
+- ganti subdomain.reonolimits.my.id menjadi nama domain punya kamu
 ```
 mkdir -p /etc/xray
 cat >/etc/xray/domain <<EOF
-biznet.reonolimits.my.id
+subdomain.reonolimits.my.id
 EOF
 ```
 
