@@ -1,8 +1,9 @@
 #!/bin/bash
 clear
-echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;41;36m                 INFO SERVER                \E[0m"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
+echo -e "\e[36m╒════════════════════════════════════════════════════╕\033[0m"
+echo -e " \E[0;41;36m                     INFO SERVER                    \E[0m"
+echo -e "\e[36m╘════════════════════════════════════════════════════╛\033[0m"
+
 uphours=`uptime -p | awk '{print $2,$3}' | cut -d , -f1`
 upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
 uptimecek=`uptime -p | awk '{print $6,$7}' | cut -d , -f1`
@@ -18,10 +19,10 @@ fi
 echo -e "IP-VPS          :  $IPVPS"
 echo -e "ISP-VPS         :  $ISPVPS"
 echo "╔════════════════════════════════════════════════════╗"
-echo -e " \E[0;41;36m             🔹 Script By Yon-Mod 🔹               \E[0m"
+echo -e " \E[0;41;36m             🔹 Script By Yon-Mod 🔹                \E[0m"
 echo "╚════════════════════════════════════════════════════╝"
 echo "╔════════════════════════════════════════════════════╗"
-echo -e " \E[0;44;33m Link Script➤https://github.com/reokadhafi/XRAY-MOD \E[0m "
+echo -e " \E[0;44;33m Link Script➤https://github.com/reokadhafi/XRAY-MOD   \E[0m"
 echo "╚════════════════════════════════════════════════════╝"
 echo "╔════════════════════════════════════════════════════╗"
 echo -e " \E[0;41;36m                  🔹 XRAY XMENU 🔹                  \E[0m"
