@@ -34,6 +34,26 @@ wget https://raw.githubusercontent.com/reokadhafi/XRAY-MOD/main/install-xray.sh 
 #install xmenu
 wget https://raw.githubusercontent.com/reokadhafi/XRAY-MOD/main/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
 #
+#auto delete akun exp
+cat > /etc/systemd/system/auto-delete-expired.service <<EOF
+[Unit]
+Description=Auto Delete Expired Xray Accounts
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/auto_delete_expired.sh
+
+[Install]
+WantedBy=multi-user.target
+
+EOF
+
+systemctl daemon-reload
+systemctl enable auto-delete-expired.service
+systemctl start auto-delete-expired.service
+
+
 #SELESAI
 echo " "
 echo "Installation has been completed!!"echo " "
