@@ -31,19 +31,16 @@ echo "║ 1. Buat Semua Akun XRAY   ➤ Create Account         ║"
 echo "║ 2. Hapus Akun XRAY        ➤ Delete Account         ║"
 echo "║ 3. Cek Nama Domain        ➤ Domain Name Checker    ║"
 echo "║ 4. Cek IP Publik          ➤ Check Public IP        ║"
-echo "║ 5. Update DLL             ➤ Update ETC             ║"
-echo "║ 6. XRAY UPDATE Core       ➤ Update Core            ║"
-echo "║ 7. XRAY UPDATE SCRIPT     ║ Update Script          ║"
-echo "║ 8. Hidupkan Ulang Xray    ➤ Restart Service XRAY   ║"
-echo "║ 9. Perbarui Sertifikat    ➤ Update Certificate     ║"
-echo "║ 10.Tambahkan Domain       ➤ ADD DOMAIN             ║"
-echo "║ 11.CARA POINTING DOMAIN   ║                        ║"
-echo "║ 12.Test Kecepatan Server  ➤ Speedtest Server       ║"
-echo "║ 13.Hidupkan Ulang VPS     ➤ Reboot                 ║"
-echo "║ 14.Keluar Dari Menu       ➤ Exit Menu              ║"
-echo "║ 15.Info Script            ║                        ║"
-echo "║ 16.Auto Pointing Subdomain║                        ║"
-echo "║ 17.Cek Semua Layanan Port ➤ Check All Port Service ║"
+echo "║ 5. Update DLL             ➤ Update Script          ║"
+echo "║ 6. XRAY UPDATE Core       ➤ Update Core & Ged      ║"
+echo "║ 7. Hidupkan Ulang Xray    ➤ Restart Service XRAY   ║"
+echo "║ 8. Perbarui Sertifikat    ➤ Update Certificate     ║"
+echo "║ 9.Test Kecepatan Server   ➤ Speedtest Server       ║"
+echo "║ 10.Hidupkan Ulang VPS     ➤ Reboot VPS             ║"
+echo "║ 11.Info Script            ║                        ║"
+echo "║ 12.Auto Pointing Subdomain║                        ║"
+echo "║ 13.Cek Semua Layanan Port ➤ Check All Port Service ║"
+echo "║ 0.Keluar Dari Menu        ➤ Exit Menu              ║"
 echo "╚════════════════════════════════════════════════════╝" 
 read -p "╰┈➤Select From Options [1-69 or x] :  " xmenu
 case $xmenu in 
@@ -63,40 +60,31 @@ curl -s ipinfo.io/ip
 updatedll
 ;;
 6)
-updatecore
+bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install --without-geodata
 ;;
 7)
-updatesc
-;;
-8)
 restart-xray
 ;;
-9)
+8)
 certv2ray
 ;;
-10)
-add-domain
-;;
-11)
-how-pointing
-;;
-12)
+9)
 speedtest
 ;;
-13)
+10)
 reboot
 ;;
-14)
-exit
-;;
-15)
+11)
 cat /root/log-install.txt
 ;;
-16)
+12)
 auto-pointing
 ;;
-17)
+13)
 cek-port
+;;
+0)
+exit
 ;;
 *)
 echo "Input The Correct Number !"
