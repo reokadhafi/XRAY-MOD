@@ -42,7 +42,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/auto_delete_expired.sh
+ExecStart=/usr/bin/auto_delete_expired
 
 [Install]
 WantedBy=multi-user.target
