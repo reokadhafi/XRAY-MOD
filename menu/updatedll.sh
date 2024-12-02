@@ -24,7 +24,7 @@ wget -O xmenu "https://raw.githubusercontent.com/reokadhafi/XRAY-MOD/main/menu/x
 wget -O auto-pointing "https://raw.githubusercontent.com/reokadhafi/XRAY-MOD/main/menu/auto-pointing.sh"
 wget -O cek-port "https://raw.githubusercontent.com/reokadhafi/XRAY-MOD/main/menu/cek-port.sh"
 wget -O xmenu "https://raw.githubusercontent.com/reokadhafi/XRAY-MOD/main/menu/xmenu.sh"
-
+wget -O xmenu "https://raw.githubusercontent.com/reokadhafi/XRAY-MOD/main/menu/auto-delete-expired.sh"
 #
 chmod +x /usr/bin/updatedll
 chmod +x /usr/bin/xmenu
@@ -37,5 +37,6 @@ chmod +x certv2ray
 chmod +x restart-xray
 chmod +x auto-pointing
 chmod +x cek-port
+chmod +x auto-delete-expired
 
 cd
